@@ -1,3 +1,9 @@
+body{
+  background-color: rgb(31, 30, 37);
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 form.signup {
   margin-top: 50px;
 };
@@ -17,11 +23,6 @@ form.login {
   line-height: 10rem;
 }
 
-body{
-  background-color: rgb(31, 30, 37);
-  margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 .background {
   background-image: url('../images/concert.jpeg');
   min-height: 100vh;
@@ -40,14 +41,16 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  box-shadow: 0 0 200px rgba(0,0,0,1) inset;
 }
 
 .lights-bg h3 {
-  color: rgb(119, 112, 184);
+  margin-top: 150px;
+  color: black;
+  text-shadow: 0 0 4px goldenrod;
 }
 
 .lights-bg a {
-  color: rgb(119, 112, 184);
   text-align: center;
 }
 
@@ -98,24 +101,20 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
-.intro-text h1 {
+
+.intro-text h1, p {
   color: white;
+  text-shadow: 2px 2px 6px black;
 }
-.intro p {
-  color: white;
-  font-size: 1.3rem;
+
+.intro-text p {
   line-height: 1.5;
+  font-size: 1.3rem;
 }
 
 .intro-text a {
-  color: white;
-  font-size: 1.3rem;
-}
-
-#signup h2 {
-  color:white;
+  color: black;
 }
 
 #signup {
@@ -125,11 +124,7 @@ body{
   color:white;
 }
 
-#login h2 {
-  color:white;
-}
-
-#login {
+#login h2, label {
   color:white;
 }
 
@@ -138,9 +133,6 @@ body{
   text-shadow: 3px 3px 3px rgb(7, 20, 26);
 }
 
-#member {
-  color: white;
-}
 #delete-button {
   background-color: rgb(63, 52, 126);
   color: white;
